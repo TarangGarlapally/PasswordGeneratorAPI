@@ -4,7 +4,7 @@
   "description": "Generates a strong password by selecting one of many implemented algorithms at random, utilizing a name and a date as arguments.",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node app.js"
   },
   "repository": {
