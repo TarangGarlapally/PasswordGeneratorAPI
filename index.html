@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Password Generator API</title>
+</head>
+<body>
+<h2 id="txt">Heya!</h2>
+<script type="text/javascript">
+
+const userAction = async () => {
+  const response = await fetch('http://localhost:3000/get-pwd', {
+    method: 'POST',
+    body: "name=Tarang&date=12-02-2020", // string or object
+    headers: {
+      'Content-Type': 'application/x-www-form-urlencoded'
+    }
+  });
+  const res = await response.json(); //extract JSON from the http response
+  if(res.error){
+  	console.log(res.error);
+  }else{
+ 	console.log(res.password);
+  }
+  document.getElementById("txt").innerHTML = res.password;
+  
+}
+userAction();
+</script>
+</body>
+</html>

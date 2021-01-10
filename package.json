@@ -1,0 +1,24 @@
+{
+  "name": "passwordgenerator-api",
+  "version": "1.0.0",
+  "description": "Generates a strong password by selecting one of many implemented algorithms at random, utilizing a name and a date as arguments.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TarangGarlapally/PasswordGeneratorAPI.git"
+  },
+  "author": "Tarang Garlapally",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TarangGarlapally/PasswordGeneratorAPI/issues"
+  },
+  "homepage": "https://github.com/TarangGarlapally/PasswordGeneratorAPI#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "firebase": "^8.2.2"
+  }
+}
