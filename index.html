@@ -8,7 +8,7 @@
 <script type="text/javascript">
 
 const userAction = async () => {
-  const response = await fetch('http://localhost:3000/get-pwd', {
+  const response = await fetch('https://passwordgenerator-api.herokuapp.com/', {
     method: 'POST',
     body: "name=Tarang&date=12-02-2020", // string or object
     headers: {
